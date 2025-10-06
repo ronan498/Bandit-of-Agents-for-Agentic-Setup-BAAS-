@@ -5,6 +5,8 @@ from baas.bandit.linucb import LinUCB
 import baas.arms.patterns  # noqa: F401 (registers arms)
 from baas.arms.registry import all_arms
 from baas.inner_rl.reinforce import KnobTuner, tune_and_execute
+import baas.arms.llm_planner  # noqa: F401
+import baas.arms.graph_planner  # noqa: F401
 
 def main(T: int = 50, alpha: float = 1.0):
     # 1) Build context vector from the *actual* environment
